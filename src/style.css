@@ -1,0 +1,226 @@
+html, body{
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, span, p, i{
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    margin-top: 10px;
+    border-radius: 80px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 80px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #78909C;
+    border-radius: 80px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #263238;
+}
+
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.644);
+    z-index: 5;
+}
+
+.first-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .3s ease-in;
+}
+
+#arrow{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin: 0 auto 50px auto;
+    transition: all .3s ease-in;
+    bottom: -20px;
+    cursor: pointer;
+}
+
+#button{
+    position: absolute;
+    color: #495057;
+    transform: translate(210px, -30px);
+    cursor: pointer;
+}
+
+.first-content .header{
+    margin: 50px auto;
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #FFF;
+}
+
+.first-content .header .input {
+    position: absolute;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    width: 200px;
+    right: 120px;
+}
+
+.first-content .header .input input{
+    border-radius: 25px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.first-content .header .input input:focus .header{
+    box-shadow: 5px 10px 8px 10px #0000006b;
+}
+
+.first-content .image{
+    margin: 0 auto;
+}
+
+.first-content .footer{
+    margin: 50px auto;
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.first-content .footer img{
+    max-width: 26px;
+    max-height: 38px;
+}
+
+.first-content .footer img:nth-child(1){
+    max-width: 50px;
+    max-height: 34px;
+}
+
+.first-content .footer .img-text{
+    display: flex;
+}
+
+.first-content .footer .img-text h4{
+    margin: auto 0 auto 20px;
+}
+
+.first-content .footer .img-text .block{
+    margin-left: 40px;
+}
+
+/* Second Content */
+
+.second-content{
+    width: 100%;
+    height: 205px;
+    background-color: #FFF;
+    display: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -205px;
+    transition: all .3s ease-in;
+}
+
+.second-content .temp{
+    display: flex;
+    min-width: 230px;
+    flex-direction: column;
+    margin: auto 20px auto 70px;
+}
+
+.second-content .temp h1{
+    font-size: 60pt;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.second-content .temp h4{
+    font-size: 20pt;
+    margin: 0 auto;
+}
+
+.second-content .days{
+    display: flex;
+    flex-direction: row;
+    margin: auto 40px auto 40px;
+    height: 90%;
+    overflow: auto;
+    padding: 4px;
+}
+
+.second-content .days .day{
+    display: flex;
+    flex-direction: column;
+    background-color: #8a2be2;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 115px;
+    margin: 0 10px;
+}
+
+.second-content .days .day canvas{
+    width: 50px;
+    margin: auto;
+}
+
+.second-content .days .day h4{
+    margin: 0 auto;
+    font-size: 15pt;
+}
+
+.autocomplete-items {
+    color: black;
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 219px;
+}
+  
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+    width: 100%;
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+}

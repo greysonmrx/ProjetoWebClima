@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>App clima</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
+    </head>
+    <body id="body">
+        <section class="first-content" id="first-content">
+            <div class="header">
+                <h1 id="cidade">Palmeira dos Índios</h1>
+                <div class="input">
+                    <input type="text" id="inputCidade">    
+                    <i class="fas fa-search" id="button"></i>                
+                </div>                
+            </div>
+            <div class="image">
+                <canvas id="icon" width="250" height="250"></canvas>
+            </div>
+            <div class="footer">
+                <div class="img-text">
+                    <canvas id="iconFooter" width="50" height="50" style="margin: auto 0;"></canvas>
+                    <h4 id="condicao">Parcialmente nublado</h4>
+                </div>
+                <div class="img-text">
+                    <div class="block">
+                        <div style="display: flex; margin-bottom: 20px;">
+                            <img src="../images/15.png">
+                            <h4 id="humidade">82%</h4>
+                        </div>
+                        <div style="display: flex; margin-bottom: 20px;">
+                                <img src="../images/17.png">
+                                <h4 id="vento">5 km/h</h4>
+                        </div>  
+                    </div>
+                    <div class="block">
+                        <div style="display: flex; margin-bottom: 20px;">
+                            <img src="../images/18.png">
+                            <h4 id="nascer_sol">5:09 am</h4>
+                        </div>
+                        <div style="display: flex; margin-bottom: 20px;">
+                            <img src="../images/19.png">
+                            <h4 id="por_sol">5:22 pm</h4>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="second-content" id="second-content">
+            <div class="temp" id="classTemp">
+                <h1 id="temperatura">27º</h1>
+                <h4 id="data">Quinta-feira</h4>
+            </div>
+            <div class="days" id="days"></div>
+        </section>
+        <i class="fas fa-chevron-up" id="arrow"></i>
+
+        <section id="loading"></section>
+
+        <!-- Scripts -->
+        <script src="./skycons.js"></script>
+        <script src="./icons.js"></script>
+        <script src="./main.js"></script>
+        <script src="./auto_complete.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    </body>
+</html>
