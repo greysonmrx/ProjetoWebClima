@@ -33,6 +33,6 @@ Pesquise uma cidade, e então, veja os detalhes de como está o tempo por lá :)
 
 ## Autores
 
-**Matheus Alves Fernandes**
-**Greyson Mascarenhas Santos Filho**
-**Guilherme Firmino**
+* **Matheus Alves Fernandes**
+* **Greyson Mascarenhas Santos Filho**
+* **Guilherme Firmino**
