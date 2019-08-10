@@ -18,7 +18,7 @@ let skycons = new Skycons({"color": "white"});
 skycons.add("icon", Skycons.RAIN);
 skycons.add("iconFooter", Skycons.RAIN);
 
-const key = "dc2040bc";
+const key = "65331f65";
 
 const getResponse = async (city) => {
     try {
