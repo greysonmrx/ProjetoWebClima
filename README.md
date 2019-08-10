@@ -3,6 +3,8 @@
 Esse projeto foi feito ulizando dados de clima e de previsão de tempo vindos da [API HGWeather](https://hgbrasil.com/status/weather). Sua principal funcionalidade é mostrar como está o tempo de uma determidada cidade.
 
 ![Página Web](https://github.com/greysonmrx/ProjetoWebClima/blob/master/images/readme2.PNG)
+
+
 ![Página Web](https://github.com/greysonmrx/ProjetoWebClima/blob/master/images/readme.PNG)
 
 ## Começando
